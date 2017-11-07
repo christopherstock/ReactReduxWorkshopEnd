@@ -1,19 +1,18 @@
-
-    /*******************************************************************************************************************
-    *   Defines the global application state.
+/**
+*   Defines the global application state.
+*
+*   @author  Christopher Stock
+*   @version 1.0
+*/
+class State
+{
+    /**
+    *   Creates a new application state object.
     *
-    *   @author  Christopher Stock
-    *   @version 1.0
-    *******************************************************************************************************************/
-    class State
+    *   @param {string[]} taskList The task list as an array.
+    */
+    constructor( taskList = [] )
     {
-        /***************************************************************************************************************
-        *   Creates a new application state object.
-        *
-        *   @param {string[]} taskList The task list as an array.
-        ***************************************************************************************************************/
-        constructor( taskList = [] )
-        {
-            this.taskList = taskList;
-        }
+        this.taskList = taskList;
     }
+}
