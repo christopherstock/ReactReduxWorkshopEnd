@@ -1,4 +1,3 @@
-
 // specify the application title
 const APPLICATION_TITLE = "React Task List";
 
