@@ -74,18 +74,18 @@ class TaskListUnconnected extends React.Component
     }
 }
 
-const TaskListStateToProps = ( state ) => {
+const taskListMapStateToProps = (state ) => {
     return {
         taskList: state.taskList
     }
 };
-const TaskListDispatchToProps = {
+const taskListMapDispatchToProps = {
     onTaskDelete:   Action.deleteTask,
     onTaskMoveUp:   Action.moveTaskUp,
     onTaskMoveDown: Action.moveTaskDown,
 };
 
 const TaskList = ReactRedux.connect(
-    TaskListStateToProps,
-    TaskListDispatchToProps
+    taskListMapStateToProps,
+    taskListMapDispatchToProps
 )( TaskListUnconnected );

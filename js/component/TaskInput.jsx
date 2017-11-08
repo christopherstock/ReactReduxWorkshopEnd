@@ -111,12 +111,12 @@ class TaskInputUnconnected extends React.Component
     };
 }
 
-const TaskInputStateToProps    = null;
-const TaskInputDispatchToProps = {
+const taskInputMapStateToProps = null;
+const taskInputMapDispatchToProps = {
     onTaskCreate: Action.createTask,
 };
 
 const TaskInput = ReactRedux.connect(
-    TaskInputStateToProps,
-    TaskInputDispatchToProps
+    taskInputMapStateToProps,
+    taskInputMapDispatchToProps
 )( TaskInputUnconnected );
